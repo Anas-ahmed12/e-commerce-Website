@@ -1,6 +1,6 @@
 
-import { Main } from "next/document";
-import Image from "next/image";
+// import { Main } from "next/document";
+// import Image from "next/image";
 import Hero from "./component/hero";
 import Summer from "./component/summer";
 import Summer2 from "./component/summer2";

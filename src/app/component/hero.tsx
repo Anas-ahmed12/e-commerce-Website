@@ -2,12 +2,13 @@
 import Image from "next/image";
 import React from "react";
 import Typewriter from "typewriter-effect";
-import AOS from "aos";
+import hero from "../../../public/hero.png"
+import AOS from "aos"
 import { useEffect } from "react";
-import "aos/dist/aos.css";
+import 'aos/dist/aos.css';
 
 const Hero = () => {
-  useEffect(() => {
+  useEffect (() => {
     AOS.init({
       easing: "ease-out-back",
       duration: 1200,
@@ -17,7 +18,7 @@ const Hero = () => {
       offset: 160,
     });
     AOS.refresh();
-  }, []);
+  },[]);
   return (
     <div className="bg-[#FAEDEB]">
       <section className="text-gray-600 body-font">
@@ -32,11 +33,8 @@ const Hero = () => {
                 }}
               />
             </h4>
-            <h1
-              className="title-font sm:text-5xl text-4xl mb-4 font-medium text-gray-900"
-              data-aos="flip-right"
-            >
-              Your Style, Your Statement: Explore Our Collection for All."
+            <h1 className="title-font sm:text-5xl text-4xl mb-4 font-medium text-gray-900" data-aos="zoom-in-up">
+              Your Style, Your Statement: Explore Our Collection for All.
             </h1>
             <div className="flex justify-center">
               <button className="inline-flex text-white bg-[#000000] border-0 py-2 px-8 mt-2 focus:outline-none rounded text-lg hover:text-black hover:font-bold hover:bg-transparent hover:border-2 hover:border-solid hover:border-black transition duration-300">
@@ -44,12 +42,9 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          <div
-            className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 bg-white border-solid border-2 border-black"
-            data-aos="fade-left"
-          >
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 bg-white border-solid border-2 border-black" data-aos="fade-left">
             <Image
-              src={require("../../../public/hero.png")}
+              src={hero}
               alt="T-Shirts"
               className=""
             />

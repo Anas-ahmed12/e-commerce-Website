@@ -4,6 +4,7 @@ import React from "react";
 import AOS from "aos"
 import { useEffect } from "react";
 import 'aos/dist/aos.css';
+import collection03 from "../../../public/collection-03.jpg"
 
 const Womensec = () => {
   useEffect (() => {
@@ -23,7 +24,7 @@ const Womensec = () => {
         <div className="container py-24 mx-auto flex flex-wrap">
           <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden justify-end flex">
             <Image
-              src={require("../../../public/collection-03.jpg")}
+              src={collection03}
               alt="T-SHIRTS"
             />
           </div>

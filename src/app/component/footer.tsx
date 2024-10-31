@@ -33,7 +33,7 @@ const Footer = () => {
             <h2 className="text-black font-bold text-center md:text-left mb-4 md:mb-">Subscribe to get offers in your inbox</h2>
             <span className="inline-flex lg:ml-auto lg:mt-0 mt-4 w-full justify-center md:justify-start md:w-auto">
               <a className="text-gray-500">
-                <FaMagnifyingGlass className='text-2xl text-black hover:text-orange-400' />
+                <FaMagnifyingGlass className='text-2xl text-black hover:text-orange-500' />
               </a>
               <a className="ml-3 text-gray-500">
                 <FaInstagram className='text-2xl text-black hover:text-red-700 hover:font-bold'  />

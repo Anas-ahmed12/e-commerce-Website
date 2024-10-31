@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import logo from '../../../public/logo.png';
 import { FaBars, FaTimes } from "react-icons/fa"; // Icons for menu and close
 
 const Navbar = () => {
@@ -16,7 +17,7 @@ const Navbar = () => {
       <header className="text-gray-600 body-font">
         <div className="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
           <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <Image src={require("../../../public/logo.png")} alt='Store' width={100} height={100}/> 
+            <Image src={logo} alt='Store' width={100} height={100}/> 
           </a>
 
           {/* Toggle Button */}

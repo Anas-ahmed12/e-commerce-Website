@@ -1,12 +1,11 @@
-"use client"
+"use client";
 import Image from "next/image";
-import React from "react";
-import AOS from "aos"
-import { useEffect } from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import 'aos/dist/aos.css';
 
 const Summer = () => {
-  useEffect (() => {
+  useEffect(() => {
     AOS.init({
       easing: "ease-out-back",
       duration: 1200,
@@ -16,7 +15,8 @@ const Summer = () => {
       offset: 160,
     });
     AOS.refresh();
-  },[]);
+  }, []);
+
   return (
     <div>
       <section className="text-gray-600 body-font">
@@ -35,10 +35,9 @@ const Summer = () => {
               <div key={index} className="p-4 lg:w-1/4 md:w-1/2 w-full">
                 <div className="h-full flex flex-col items-center text-center">
                   <div className="relative w-full h-96">
-                    {" "}
                     {/* Increased height */}
                     <Image
-                      src={require(`../../../public/summer-${item}.jpg`)}
+                      src={`/summer-${item}.jpg`} // Dynamic image path
                       alt="Shirts"
                       layout="fill"
                       className="object-cover rounded-md"

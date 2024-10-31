@@ -5,6 +5,8 @@ import { IoStar } from "react-icons/io5";
 import AOS from "aos"
 import { useEffect } from "react";
 import 'aos/dist/aos.css';
+import review1 from "../../../public/review-1.jpg"
+import review2 from "../../../public/review-2.jpg"
 
 const Review = () => {
   useEffect (() => {
@@ -25,10 +27,10 @@ const Review = () => {
           Reviews
         </h2>
         <p className="text-base text-center font-bold leading-6 mt-4">
-          "Shopping here was a breeze! The website is user-friendly, and my
-          T-shirts arrived promptly. <br />I love how they fit and feel. The quality
-          is impressive for the price, <br />and I appreciate the eco-friendly options
-          available. Will be spreading the word!"
+            Shopping here was a breeze! The website is user-friendly, and my
+            T-shirts arrived promptly. <br />I love how they fit and feel. The quality
+            is impressive for the price, <br />and I appreciate the eco-friendly options
+            available. Will be spreading the word!.
         </p>
         <div className="flex justify-center items-center">
           <IoStar className="text-[#F0AD4E] text-xl font-bold flex mt-6" />
@@ -43,7 +45,7 @@ const Review = () => {
             <div className="sm:w-1/2 mb-10 px-4">
               <div className="rounded-lg h-[700px] overflow-hidden"> {/* Height increased */}
                 <Image 
-                  src={require("../../../public/review-1.jpg")} 
+                  src={review1} 
                   alt="T-Shirt" 
                   width={500}  // Set your desired width
                   height={800} // Height corresponding to increased size
@@ -54,7 +56,7 @@ const Review = () => {
             <div className="sm:w-1/2 mb-10 px-4">
               <div className="rounded-lg h-[700px] overflow-hidden"> {/* Height increased */}
                 <Image 
-                  src={require("../../../public/review-2.jpg")} 
+                  src={review2} 
                   alt="T-Shirt" 
                   width={500}  // Set your desired width
                   height={800} // Height corresponding to increased size

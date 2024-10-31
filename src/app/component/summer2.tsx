@@ -4,10 +4,11 @@ import React from "react";
 import AOS from "aos"
 import { useEffect } from "react";
 import 'aos/dist/aos.css';
+import hello from "../../../public/hello.avif"
 
 
 const Summer2 = () => {
-  useEffect (() => {
+   useEffect (() => {
     AOS.init({
       easing: "ease-out-back",
       duration: 1200,
@@ -25,7 +26,7 @@ const Summer2 = () => {
           <div className="lg:w-4/5 mx-auto flex flex-wrap h-[500px]">
             <Image
               alt="ecomerce"
-              src={require("../../../public/hello.avif")}
+              src={hello}
               className="lg:w-1/2 w-full lg:h-auto h-64 rounded bg-auto bg-cover bg-contain"
               data-aos="fade-up-right"
             />
@@ -135,17 +136,17 @@ const Summer2 = () => {
                 </span>
               </div>
               <p className="leading-relaxed">
-                "Discover the art of self-expression with our stylish t-shirts!
-                Whether you're looking for fun, quirky designs or timeless
+                Discover the art of self-expression with our stylish t-shirts!
+                Whether you re looking for fun, quirky designs or timeless
                 classics, we have the perfect fit for you. Dive into our
-                collection today!"
+                collection today!
                 <br/>
                 <br/>
 
-                 "Find your next favorite tee at our store!
+                Find your next favorite tee at our store!
                 With designs that inspire and fabrics that feel amazing, we’ve
                 got the perfect t-shirt for every mood. Shop now and wear what
-                you love!"
+                you love!
               </p>
               <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
                 <div className="flex">
